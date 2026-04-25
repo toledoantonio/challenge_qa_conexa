@@ -1,2 +1,30 @@
-# challenge_qa_conexa
-test practico qa automation
+# Challenge QA Automation - Conexa
+
+Automatización E2E realizada como parte del challenge técnico para el puesto de QA Engineer.
+
+## Herramienta utilizada
+
+- Playwright
+- TypeScript
+- Node.js
+
+## Sitio automatizado
+
+https://www.demoblaze.com/
+
+## Flujo automatizado
+
+Se automatiza un flujo de compra en Demoblaze:
+
+1. Ingresar al sitio.
+2. Seleccionar un producto.
+3. Agregar el producto al carrito.
+4. Validar que el producto se encuentre en el carrito.
+5. Completar el formulario de compra.
+6. Confirmar la compra.
+7. Validar que se muestre el mensaje de compra exitosa.
+
+## Instalación
+
+```bash
+npm install
