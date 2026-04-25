@@ -1,6 +1,6 @@
 # Challenge QA Automation - Conexa
 
-Automatización E2E realizada como parte del challenge técnico para el puesto de QA Engineer.
+Automatizacion E2E realizada como parte del challenge tecnico para el puesto de QA Engineer.
 
 ## Herramienta utilizada
 
@@ -24,7 +24,32 @@ Se automatiza un flujo de compra en Demoblaze:
 6. Confirmar la compra.
 7. Validar que se muestre el mensaje de compra exitosa.
 
-## Instalación
+## Instalacion
 
 ```bash
 npm install
+```
+
+Si los navegadores de Playwright no estan instalados:
+
+```bash
+npx playwright install
+```
+
+## Ejecucion
+
+```bash
+npm test
+```
+
+Para ver el navegador durante la ejecucion:
+
+```bash
+npm run test:headed
+```
+
+Para abrir el reporte HTML luego de una ejecucion:
+
+```bash
+npm run test:report
+```
