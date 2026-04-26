@@ -20,17 +20,26 @@ test.describe('Flujo de compra - Demoblaze', () => {
     const productoPagina = new ProductoPagina(page);
     const carritoPagina = new CarritoPagina(page);
 
-    await homePagina.ingresar();
-    await homePagina.seleccionarProducto(nombreProducto);
+    await test.step('Ingresar a Demoblaze y seleccionar producto', async () => {
+      await homePagina.ingresar();
+      await homePagina.seleccionarProducto(nombreProducto);
+    });
 
-    await productoPagina.validarTituloProducto(nombreProducto);
-    await productoPagina.agregarAlCarrito();
+    await test.step('Validar producto y agregarlo al carrito', async () => {
+      await productoPagina.validarTituloProducto(nombreProducto);
+      await productoPagina.agregarAlCarrito();
+    });
 
-    await carritoPagina.ingresar();
-    await carritoPagina.validarProductoListado(nombreProducto);
-    await carritoPagina.validarPrecioProducto(precioProducto);
-    await carritoPagina.iniciarOrden();
-    await carritoPagina.completarCompra(buyerData);
-    await carritoPagina.validarConfirmacionCompra(precioProducto);
+    await test.step('Validar carrito y precio del producto', async () => {
+      await carritoPagina.ingresar();
+      await carritoPagina.validarProductoListado(nombreProducto);
+      await carritoPagina.validarPrecioProducto(precioProducto);
+    });
+
+    await test.step('Completar compra y validar confirmacion final', async () => {
+      await carritoPagina.iniciarOrden();
+      await carritoPagina.completarCompra(buyerData);
+      await carritoPagina.validarConfirmacionCompra(precioProducto);
+    });
   });
 });

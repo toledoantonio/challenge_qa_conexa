@@ -24,6 +24,8 @@ Se automatiza un flujo de compra en Demoblaze:
 6. Confirmar la compra.
 7. Validar que se muestre el mensaje de compra exitosa.
 
+Adicionalmente, se valida el precio del producto durante el flujo.
+
 ## Instalacion
 
 ```bash
