@@ -3,14 +3,14 @@ import { CarritoPagina } from '../pages/CarritoPagina';
 import { HomePagina } from '../pages/HomePagina';
 import { ProductoPagina } from '../pages/ProductoPagina';
 
-test.describe('Flujo de compra en Demoblaze', () => {
+test.describe('Flujo de compra - Demoblaze', () => {
   test('agregar un producto al carrito y confirmar compra', async ({ page }) => {
     const nombreProducto = 'Samsung galaxy s6';
     const precioProducto = '360';
     const buyerData = {
       name: 'Antonio Toledo',
       country: 'Argentina',
-      city: 'Jesus Maria',
+      city: 'Cordoba',
       card: '2111111111111111',
       month: '07',
       year: '2026',
