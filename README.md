@@ -1,6 +1,6 @@
 # Challenge QA Automation - Conexa
 
-Automatizacion E2E realizada como parte del challenge tecnico para el puesto de QA Engineer.
+Automatizacion E2E realizada como parte del challenge tecnico (Parte 4).
 
 ## Herramienta utilizada
 
